@@ -39,11 +39,11 @@ map Q gq
 
  " Press nn to return to normal mode when in insert mode
  inoremap jk <ESC>
- inoremap <ESC> <NOP>
+ " inoremap <ESC> <NOP>
 
  " Press ii to return to normal mode when in visual mode
  vnoremap jk <ESC>
- vnoremap <ESC> <NOP>
+ "vnoremap <ESC> <NOP>
 
  " Press ii when in Command mode, to go back to normal mode
  cnoremap jk <ESC>
