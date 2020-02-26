@@ -16,3 +16,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 source $HOME/.config/broot/launcher/bash/br
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias ll='ls -ahl'
+
+##using curl
+transfer() {
+	    curl --progress-bar --upload-file "$1" https://transfer.sh/$(basename $1) | tee /dev/null;
+    }
+
+alias transfer=transfer
