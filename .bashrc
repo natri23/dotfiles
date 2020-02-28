@@ -23,3 +23,8 @@ transfer() {
     }
 
 alias transfer=transfer
+
+# deep fuzzy cd
+function dcd {
+	    br --only-folders --cmd "$1 :cd"
+    }
