@@ -16,6 +16,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 source $HOME/.config/broot/launcher/bash/br
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias ll='ls -ahl'
+bind -x '"\C-i":"br -h"'
 
 ##using curl
 transfer() {
