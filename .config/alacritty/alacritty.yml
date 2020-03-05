@@ -183,10 +183,10 @@ font:
 #draw_bold_text_with_bright_colors: true
 
 # Colors (Tomorrow Night Bright)
-#colors:
+colors:
   # Default colors
-  #primary:
-  #  background: '0x000000'
+  primary:
+    background: '0x111c34'
   #  foreground: '0xeaeaea'
 
     # Bright and dim foreground colors
