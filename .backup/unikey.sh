@@ -1,1 +1,1 @@
-sleep 2s && ibus exit; ibus-daemon --xim &
+sleep 2s && ibus exit && ibus-daemon --xim &
