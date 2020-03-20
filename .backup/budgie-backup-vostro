@@ -1,17 +1,17 @@
 [budgie-panel]
-dark-theme=false
+dark-theme=true
 migration-level=1
 panels=['f53d05f8-4881-11ea-a709-0c8bfd2df7f8']
 
 [budgie-panel/applets/{14f422a0-4882-11ea-a709-0c8bfd2df7f8}]
 alignment='center'
 name='Clock'
-position=2
+position=3
 
 [budgie-panel/applets/{1a32f12e-4882-11ea-a709-0c8bfd2df7f8}]
 alignment='center'
 name='User Indicator'
-position=6
+position=7
 
 [budgie-panel/applets/{21b3be7e-4882-11ea-a709-0c8bfd2df7f8}]
 alignment='end'
@@ -68,6 +68,21 @@ alignment='end'
 name='Raven Trigger'
 position=6
 
+[budgie-panel/applets/{a8082cfe-5c4f-11ea-97c1-0c8bfd2df7f8}]
+alignment='center'
+name='Separator'
+position=2
+
+[budgie-panel/applets/{dcbcb82a-6901-11ea-bfab-0c8bfd2df7f8}]
+alignment='start'
+name='Icon Task List'
+position=2
+
+[budgie-panel/applets/{eb28bf3c-6724-11ea-8669-0c8bfd2df7f8}]
+alignment='start'
+name='Workspace Switcher'
+position=1
+
 [budgie-panel/applets/{eefd5c7a-5483-11ea-9f11-0c8bfd2df7f8}]
 alignment='end'
 name='Screenshot'
@@ -86,17 +101,24 @@ menu-headers=false
 menu-icon='/home/solus/Downloads/budgie/SVG/Budgie.svg'
 menu-label='Budgie'
 
+[budgie-panel/instance/icon-tasklist/{dcbcb82a-6901-11ea-bfab-0c8bfd2df7f8}]
+pinned-launchers=@as []
+
 [budgie-panel/instance/workspaces/{7a5ebcda-4a22-11ea-95fa-0c8bfd2df7f8}]
 addbutton-visibility='hover'
 
+[budgie-panel/instance/workspaces/{eb28bf3c-6724-11ea-8669-0c8bfd2df7f8}]
+addbutton-visibility='hover'
+
 [budgie-panel/panels/{f53d05f8-4881-11ea-a709-0c8bfd2df7f8}]
-applets=['14f422a0-4882-11ea-a709-0c8bfd2df7f8', 'f8bc2470-4881-11ea-a709-0c8bfd2df7f8', '844ca8d6-5122-11ea-bd0e-0c8bfd2df7f8', '2c23bbe8-4882-11ea-a709-0c8bfd2df7f8', '3d9a121e-4882-11ea-a709-0c8bfd2df7f8', 'eefd5c7a-5483-11ea-9f11-0c8bfd2df7f8', '1a32f12e-4882-11ea-a709-0c8bfd2df7f8', '80f49f52-4882-11ea-a709-0c8bfd2df7f8', '9802847a-5458-11ea-b2fb-0c8bfd2df7f8']
+applets=['14f422a0-4882-11ea-a709-0c8bfd2df7f8', 'f8bc2470-4881-11ea-a709-0c8bfd2df7f8', '844ca8d6-5122-11ea-bd0e-0c8bfd2df7f8', '80f49f52-4882-11ea-a709-0c8bfd2df7f8', 'eb28bf3c-6724-11ea-8669-0c8bfd2df7f8', 'eefd5c7a-5483-11ea-9f11-0c8bfd2df7f8', '1a32f12e-4882-11ea-a709-0c8bfd2df7f8', '3d9a121e-4882-11ea-a709-0c8bfd2df7f8', 'dcbcb82a-6901-11ea-bfab-0c8bfd2df7f8', '2c23bbe8-4882-11ea-a709-0c8bfd2df7f8', 'a8082cfe-5c4f-11ea-97c1-0c8bfd2df7f8', '9802847a-5458-11ea-b2fb-0c8bfd2df7f8']
+autohide='none'
 dock-mode=false
-enable-shadow=true
+enable-shadow=false
 location='top'
 size=29
 theme-regions=true
-transparency='none'
+transparency='always'
 
 [budgie-raven]
 allow-volume-overdrive=false
@@ -113,4 +135,4 @@ center-windows=false
 focus-mode=false
 
 [software-center]
-last-checked=int64 1582506489
+last-checked=int64 1584691344

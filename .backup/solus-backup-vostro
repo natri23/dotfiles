@@ -1,7 +1,7 @@
 [apps/psensor]
-graph-alpha-channel-enabled=true
-graph-background-alpha=0.13500000000000001
-graph-background-color='#e8f4e8f4a8f5'
+graph-alpha-channel-enabled=false
+graph-background-alpha=1.0
+graph-background-color='#2d2d2c2c2d2d'
 graph-foreground-color='#555557575353'
 graph-monitoring-duration=1
 graph-smooth-curves-enabled=true
@@ -14,8 +14,8 @@ interface-window-h=414
 interface-window-keep-below-enabled=false
 interface-window-restore-enabled=true
 interface-window-w=959
-interface-window-x=158
-interface-window-y=136
+interface-window-x=258
+interface-window-y=122
 notif-script=''
 provider-atiadlsdk-enabled=true
 provider-gtop2-enabled=true
@@ -48,23 +48,23 @@ history=[(int64 1580953741, 'Untitled', 'file:///home/solus/Pictures/Screenshots
 save-path='~/Pictures/Screenshots'
 
 [com/github/cybre/budgie-screenshot-applet/{eefd5c7a-5483-11ea-9f11-0c8bfd2df7f8}]
-history=[(int64 1582273637, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-02-21 15:27:17.png', ''), (1582273647, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-02-21 15:27:27.png', '')]
+history=[(int64 1582273637, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-02-21 15:27:17.png', ''), (1582273647, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-02-21 15:27:27.png', ''), (1583139282, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-03-02 15:54:42.png', ''), (1583139347, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-03-02 15:55:47.png', ''), (1583462734, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-03-06 09:45:34.png', ''), (1583462784, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-03-06 09:46:24.png', '')]
 save-path='~/Pictures/Screenshots'
 
 [com/solus-project/budgie-panel]
-dark-theme=false
+dark-theme=true
 migration-level=1
 panels=['f53d05f8-4881-11ea-a709-0c8bfd2df7f8']
 
 [com/solus-project/budgie-panel/applets/{14f422a0-4882-11ea-a709-0c8bfd2df7f8}]
 alignment='center'
 name='Clock'
-position=2
+position=3
 
 [com/solus-project/budgie-panel/applets/{1a32f12e-4882-11ea-a709-0c8bfd2df7f8}]
 alignment='center'
 name='User Indicator'
-position=6
+position=7
 
 [com/solus-project/budgie-panel/applets/{21b3be7e-4882-11ea-a709-0c8bfd2df7f8}]
 alignment='end'
@@ -121,6 +121,21 @@ alignment='end'
 name='Raven Trigger'
 position=6
 
+[com/solus-project/budgie-panel/applets/{a8082cfe-5c4f-11ea-97c1-0c8bfd2df7f8}]
+alignment='center'
+name='Separator'
+position=2
+
+[com/solus-project/budgie-panel/applets/{dcbcb82a-6901-11ea-bfab-0c8bfd2df7f8}]
+alignment='start'
+name='Icon Task List'
+position=2
+
+[com/solus-project/budgie-panel/applets/{eb28bf3c-6724-11ea-8669-0c8bfd2df7f8}]
+alignment='start'
+name='Workspace Switcher'
+position=1
+
 [com/solus-project/budgie-panel/applets/{eefd5c7a-5483-11ea-9f11-0c8bfd2df7f8}]
 alignment='end'
 name='Screenshot'
@@ -139,17 +154,24 @@ menu-headers=false
 menu-icon='/home/solus/Downloads/budgie/SVG/Budgie.svg'
 menu-label='Budgie'
 
+[com/solus-project/budgie-panel/instance/icon-tasklist/{dcbcb82a-6901-11ea-bfab-0c8bfd2df7f8}]
+pinned-launchers=@as []
+
 [com/solus-project/budgie-panel/instance/workspaces/{7a5ebcda-4a22-11ea-95fa-0c8bfd2df7f8}]
 addbutton-visibility='hover'
 
+[com/solus-project/budgie-panel/instance/workspaces/{eb28bf3c-6724-11ea-8669-0c8bfd2df7f8}]
+addbutton-visibility='hover'
+
 [com/solus-project/budgie-panel/panels/{f53d05f8-4881-11ea-a709-0c8bfd2df7f8}]
-applets=['14f422a0-4882-11ea-a709-0c8bfd2df7f8', 'f8bc2470-4881-11ea-a709-0c8bfd2df7f8', '844ca8d6-5122-11ea-bd0e-0c8bfd2df7f8', '80f49f52-4882-11ea-a709-0c8bfd2df7f8', 'eefd5c7a-5483-11ea-9f11-0c8bfd2df7f8', '3d9a121e-4882-11ea-a709-0c8bfd2df7f8', '2c23bbe8-4882-11ea-a709-0c8bfd2df7f8', '1a32f12e-4882-11ea-a709-0c8bfd2df7f8', '9802847a-5458-11ea-b2fb-0c8bfd2df7f8']
+applets=['14f422a0-4882-11ea-a709-0c8bfd2df7f8', 'f8bc2470-4881-11ea-a709-0c8bfd2df7f8', '844ca8d6-5122-11ea-bd0e-0c8bfd2df7f8', '80f49f52-4882-11ea-a709-0c8bfd2df7f8', 'eb28bf3c-6724-11ea-8669-0c8bfd2df7f8', 'eefd5c7a-5483-11ea-9f11-0c8bfd2df7f8', '1a32f12e-4882-11ea-a709-0c8bfd2df7f8', '3d9a121e-4882-11ea-a709-0c8bfd2df7f8', 'dcbcb82a-6901-11ea-bfab-0c8bfd2df7f8', '2c23bbe8-4882-11ea-a709-0c8bfd2df7f8', 'a8082cfe-5c4f-11ea-97c1-0c8bfd2df7f8', '9802847a-5458-11ea-b2fb-0c8bfd2df7f8']
+autohide='none'
 dock-mode=false
-enable-shadow=true
+enable-shadow=false
 location='top'
 size=29
 theme-regions=true
-transparency='none'
+transparency='always'
 
 [com/solus-project/budgie-raven]
 allow-volume-overdrive=false
@@ -166,14 +188,27 @@ center-windows=false
 focus-mode=false
 
 [com/solus-project/software-center]
-last-checked=int64 1582790638
+last-checked=int64 1584691344
+
+[desktop/ibus/engine/unikey]
+auto-restore-non-vn=true
+free-marking=true
+input-method='Telex'
+modern-style=false
+mouse-capture=false
+output-charset='Unicode'
+process-word-at-begin=false
+spell-check=true
 
 [desktop/ibus/general]
-preload-engines=['Unikey', 'xkb:us::eng']
-use-system-keyboard-layout=true
+engines-order=['Bamboo', 'xkb:us::eng']
+preload-engines=['xkb:us::eng', 'Bamboo']
+use-global-engine=true
+use-system-keyboard-layout=false
+version='1.5.22'
 
 [desktop/ibus/panel]
-show=1
+show=0
 show-icon-on-systray=true
 
 [io/github/gnome-mpv]
@@ -191,10 +226,10 @@ width=1366
 alignment='center'
 auto-pinning=true
 current-workspace-only=false
-dock-items=['', 'google-chrome.dockitem', 'org.gnome.Terminal.dockitem', 'org.gnome.Nautilus.dockitem', 'solus-sc.dockitem', 'sublime_text.dockitem', 'gimp.dockitem', 'org.kde.krusader.dockitem', 'org.gnome.Calculator.dockitem', 'org.gnome.Calendar.dockitem', 'flameshot.dockitem', 'psensor.dockitem', 'gnome-system-monitor.dockitem', 'simplescreenrecorder.dockitem', 'org.qbittorrent.qBittorrent.dockitem', 'budgie-desktop-settings.dockitem']
+dock-items=['', 'google-chrome.dockitem', 'org.gnome.Nautilus.dockitem', 'alacritty.dockitem', 'solus-sc.dockitem', 'sublime_text.dockitem', 'atom.dockitem', 'gimp.dockitem', 'org.kde.krusader.dockitem', 'org.gnome.Calculator.dockitem', 'org.gnome.Calendar.dockitem', 'flameshot.dockitem', 'psensor.dockitem', 'gnome-system-monitor.dockitem', 'simplescreenrecorder.dockitem', 'org.qbittorrent.qBittorrent.dockitem', 'budgie-desktop-settings.dockitem']
 hide-delay=0
-hide-mode='window-dodge'
-icon-size=34
+hide-mode='dodge-active'
+icon-size=36
 items-alignment='center'
 lock-items=false
 monitor=''
@@ -203,11 +238,16 @@ pinned-only=false
 position='bottom'
 pressure-reveal=false
 show-dock-item=true
-theme='Transparent'
+theme='mcOS_Mojave Night'
 tooltips-enabled=true
 unhide-delay=0
 zoom-enabled=true
-zoom-percent=160
+zoom-percent=175
+
+[org/gnome/Totem]
+active-plugins=['skipto', 'autoload-subtitles', 'open-directory', 'variable-rate', 'screensaver', 'save-file', 'apple-trailers', 'screenshot', 'movie-properties', 'recent', 'vimeo', 'media-player-keys', 'rotation']
+autoload-subtitles=true
+subtitle-encoding='UTF-8'
 
 [org/gnome/baobab/ui]
 active-chart='rings'
@@ -226,13 +266,13 @@ source-currency='DZD'
 source-units='degree'
 target-currency='DZD'
 target-units='radian'
-window-position=(416, 116)
+window-position=(797, 248)
 word-size=64
 
 [org/gnome/calendar]
 active-view='month'
 window-maximized=false
-window-position=(283, 74)
+window-position=(234, 49)
 window-size=(800, 600)
 
 [org/gnome/control-center]
@@ -261,7 +301,7 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/solus/.local/share/backgrounds/2020-02-06-09-33-38-mountains-1412683.jpg'
+picture-uri='file:///home/solus/.local/share/backgrounds/2020-03-06-08-52-53-mojave-night.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 show-desktop-icons=false
@@ -274,18 +314,19 @@ automatic-timezone=false
 
 [org/gnome/desktop/input-sources]
 current=uint32 1
-sources=[('xkb', 'us'), ('ibus', 'Unikey')]
+per-window=false
+sources=[('xkb', 'us'), ('ibus', 'Bamboo')]
 xkb-options=@as []
 
 [org/gnome/desktop/interface]
-clock-format='12h'
+clock-format='24h'
 clock-show-date=false
 clock-show-seconds=true
 cursor-theme='breeze_cursors'
 enable-animations=true
 gtk-im-module='ibus'
-gtk-theme='Nordic-darker'
-icon-theme='Zafiro-icons'
+gtk-theme='Mc-OS-CTLina-Gnome-Dark-1.3.1'
+icon-theme='Zafiro-icons-Mac'
 show-battery-percentage=false
 
 [org/gnome/desktop/peripherals/mouse]
@@ -293,8 +334,9 @@ speed=-0.34285714285714286
 
 [org/gnome/desktop/peripherals/touchpad]
 edge-scrolling-enabled=false
+natural-scroll=false
 send-events='enabled'
-speed=0.078014184397163122
+speed=0.097902097902097918
 tap-to-click=true
 two-finger-scrolling-enabled=true
 
@@ -305,7 +347,7 @@ remove-old-trash-files=true
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/solus/.local/share/backgrounds/2020-02-06-09-33-38-mountains-1412683.jpg'
+picture-uri='file:///home/solus/.local/share/backgrounds/2020-03-04-13-52-46-Icescape.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -338,8 +380,8 @@ switch-applications=['<Alt>Tab']
 switch-applications-backward=['<Shift><Alt>Tab']
 switch-group=['<Super>Tab']
 switch-group-backward=['<Shift><Super>Tab']
-switch-input-source=['<Primary>space']
-switch-input-source-backward=['<Primary><Shift>space']
+switch-input-source=['<Super>space']
+switch-input-source-backward=['<Shift><Super>space']
 switch-to-workspace-1=['<Super>1']
 switch-to-workspace-2=['<Super>2']
 switch-to-workspace-3=['<Super>3']
@@ -366,11 +408,11 @@ migrated=true
 network-monitor-gio-name=''
 
 [org/gnome/evolution-data-server/calendar]
-notify-window-height=100
+notify-window-height=235
 notify-window-width=462
 notify-window-x=0
 notify-window-y=24
-reminders-past=@as []
+reminders-past=['c535c874fe9e083a5740f21f033db09b4b646fbb\n2336c35d66856cc9863d8ad02da5fabac3f2eb9e\n1584262740\n1584262800\n1584266400\nBEGIN:VEVENT\r\nDTSTART;TZID=Europe/Stockholm:20100509T100000\r\nDTEND;TZID=Europe/Stockholm:20100509T110000\r\nRRULE:FREQ=WEEKLY;BYDAY=SU\r\nDTSTAMP:20150706T204901Z\r\nUID:f57jj5agt1bldih3sp7h09egm0@google.com\r\nCREATED:20100503T114745Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20150706T204901Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:REVIEW\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63571898941\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT1M\r\nX-EVOLUTION-ALARM-UID:2336c35d66856cc9863d8ad02da5fabac3f2eb9e\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:EMAIL\r\nDESCRIPTION:This is an event reminder\r\nSUMMARY:Alarm notification\r\nATTENDEE:mailto:natri23@gmail.com\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:5d7c7dcf619e33c49964ffe7c8551dad4149ec1c\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e7f79386ec7d5bd381035e66d815a9c9d527e26a\n83271790c59ff6b57711cba4d43e77865ad33601\n1583657940\n1583658000\n1583661600\nBEGIN:VEVENT\r\nDTSTART;TZID=Europe/Stockholm:20100509T100000\r\nDTEND;TZID=Europe/Stockholm:20100509T110000\r\nRRULE:FREQ=WEEKLY;BYDAY=SU\r\nDTSTAMP:20150706T204901Z\r\nUID:f57jj5agt1bldih3sp7h09egm0@google.com\r\nCREATED:20100503T114745Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20150706T204901Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:REVIEW\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63571898941\r\nBEGIN:VALARM\r\nACTION:EMAIL\r\nDESCRIPTION:This is an event reminder\r\nSUMMARY:Alarm notification\r\nATTENDEE:mailto:natri23@gmail.com\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:6af52ac33f816bc3d49f3dc935e1f3be085717c7\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT1M\r\nX-EVOLUTION-ALARM-UID:83271790c59ff6b57711cba4d43e77865ad33601\r\nEND:VALARM\r\nEND:VEVENT\r\n']
 
 [org/gnome/file-roller/dialogs/extract]
 recreate-folders=true
@@ -385,7 +427,7 @@ sort-type='ascending'
 
 [org/gnome/file-roller/ui]
 sidebar-width=200
-window-height=540
+window-height=541
 window-width=1024
 
 [org/gnome/gedit/plugins]
@@ -394,7 +436,7 @@ active-plugins=['spell', 'filebrowser', 'time', 'modelines', 'docinfo']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/solus/.conky'
+virtual-root='file:///home/solus'
 
 [org/gnome/gedit/preferences/ui]
 show-tabs-mode='auto'
@@ -453,7 +495,7 @@ sort-order=0
 restore-shortcuts=@as []
 
 [org/gnome/nautilus/compression]
-default-compression-format='zip'
+default-compression-format='tar.xz'
 
 [org/gnome/nautilus/desktop]
 home-icon-visible=false
@@ -473,7 +515,7 @@ show-create-link=true
 use-experimental-views=false
 
 [org/gnome/nautilus/window-state]
-geometry='683x538+24+50'
+geometry='969x537+196+92'
 maximized=false
 sidebar-width=168
 
@@ -494,7 +536,14 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/rhythmbox]
-position=(-1, -1)
+position=(0, 24)
+
+[org/gnome/rhythmbox/library]
+layout-filename='%tN - %tt'
+layout-path='%aa/%at'
+
+[org/gnome/rhythmbox/library/encoding]
+media-type='audio/x-vorbis'
 
 [org/gnome/rhythmbox/library/source]
 show-browser=true
@@ -518,11 +567,17 @@ initial-stations-loaded=true
 [org/gnome/rhythmbox/plugins/iradio/source]
 show-browser=true
 
+[org/gnome/rhythmbox/podcast]
+download-location='file:///home/solus/Music'
+
 [org/gnome/rhythmbox/podcast/source]
 show-browser=true
 
 [org/gnome/rhythmbox/rhythmdb]
 locations=['file:///home/solus/Music']
+
+[org/gnome/rhythmbox/sources]
+visible-columns=['post-time', 'duration', 'track-number', 'album', 'genre', 'artist']
 
 [org/gnome/settings-daemon/peripherals/keyboard]
 numlock-state='off'
@@ -531,17 +586,14 @@ numlock-state='off'
 night-light-last-coordinates=(10.8142, 106.6438)
 
 [org/gnome/settings-daemon/plugins/media-keys]
-area-screenshot-clip=@as []
 control-center=['<Super>x']
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/']
 eject=['<Super>j']
 home=['<Super>e']
 screencast=@as []
 screenshot=@as []
-screenshot-clip=@as []
 search=['<Super>f']
 window-screenshot=@as []
-window-screenshot-clip=['<Alt>Print']
 www=['<Super>grave']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
@@ -576,8 +628,8 @@ name='Reboot'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
 binding='<Shift><Super>s'
-command='gnome-screenshot -a -c -i'
-name='gnome-screenshot -a -c'
+command='flameshot gui'
+name='flameshot gui'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5]
 binding='<Primary><Alt>s'
@@ -636,21 +688,29 @@ select-all='<Primary>a'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 audible-bell=false
+background-color='rgb(45,44,45)'
 background-transparency-percent=7
+bold-color-same-as-fg=true
+bold-is-bright=false
 cell-height-scale=1.0
 cell-width-scale=1.0
+cursor-colors-set=false
 default-size-columns=132
 default-size-rows=30
+foreground-color='rgb(211,215,207)'
+palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+use-system-font=true
+use-theme-colors=true
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.34901960784313724, 0.47843137254901963, 0.63137254901960782, 1.0), (0.34901960784313724, 0.47843137254901963, 0.41176470588235292, 1.0), (0.34901960784313724, 0.26666666666666666, 0.41176470588235292, 1.0), (0.23137254901960785, 0.26666666666666666, 0.0, 1.0), (0.23137254901960785, 0.0, 0.0, 1.0), (0.23137254901960785, 0.26666666666666666, 0.41176470588235292, 1.0), (0.23137254901960785, 0.26666666666666666, 0.41568627450980394, 1.0), (0.22745098039215686, 0.26666666666666666, 0.41568627450980394, 1.0)]
-selected-color=(true, 0.33333333333333331, 0.3411764705882353, 0.32549019607843138, 1.0)
+custom-colors=[(0.90998702983138779, 0.90998702983138779, 0.65999847409781032, 1.0), (0.17647058823529413, 0.17254901960784313, 0.17647058823529413, 1.0), (0.066666666666666652, 0.10980392156862742, 0.20392156862745098, 1.0), (0.34901960784313724, 0.47843137254901963, 0.63137254901960782, 1.0), (0.34901960784313724, 0.47843137254901963, 0.41176470588235292, 1.0), (0.34901960784313724, 0.26666666666666666, 0.41176470588235292, 1.0), (0.23137254901960785, 0.26666666666666666, 0.0, 1.0), (0.23137254901960785, 0.0, 0.0, 1.0)]
+selected-color=(true, 0.17647058823529413, 0.17254901960784313, 0.17647058823529413, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=178
