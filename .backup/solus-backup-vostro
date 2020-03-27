@@ -49,6 +49,7 @@ save-path='~/Pictures/Screenshots'
 
 [com/github/cybre/budgie-screenshot-applet/{eefd5c7a-5483-11ea-9f11-0c8bfd2df7f8}]
 history=[(int64 1582273637, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-02-21 15:27:17.png', ''), (1582273647, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-02-21 15:27:27.png', ''), (1583139282, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-03-02 15:54:42.png', ''), (1583139347, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-03-02 15:55:47.png', ''), (1583462734, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-03-06 09:45:34.png', ''), (1583462784, 'Untitled', 'file:///home/solus/Pictures/Screenshots/Screenshot from 2020-03-06 09:46:24.png', '')]
+monitor-to-use='LVDS1'
 save-path='~/Pictures/Screenshots'
 
 [com/solus-project/budgie-panel]
@@ -188,7 +189,7 @@ center-windows=false
 focus-mode=false
 
 [com/solus-project/software-center]
-last-checked=int64 1584691344
+last-checked=int64 1585291924
 
 [desktop/ibus/engine/unikey]
 auto-restore-non-vn=true
@@ -276,7 +277,7 @@ window-position=(234, 49)
 window-size=(800, 600)
 
 [org/gnome/control-center]
-last-panel='mouse'
+last-panel='display'
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'Sundry', 'YaST']
@@ -327,7 +328,7 @@ enable-animations=true
 gtk-im-module='ibus'
 gtk-theme='Mc-OS-CTLina-Gnome-Dark-1.3.1'
 icon-theme='Zafiro-icons-Mac'
-show-battery-percentage=false
+show-battery-percentage=true
 
 [org/gnome/desktop/peripherals/mouse]
 speed=-0.34285714285714286
@@ -412,7 +413,7 @@ notify-window-height=235
 notify-window-width=462
 notify-window-x=0
 notify-window-y=24
-reminders-past=['c535c874fe9e083a5740f21f033db09b4b646fbb\n2336c35d66856cc9863d8ad02da5fabac3f2eb9e\n1584262740\n1584262800\n1584266400\nBEGIN:VEVENT\r\nDTSTART;TZID=Europe/Stockholm:20100509T100000\r\nDTEND;TZID=Europe/Stockholm:20100509T110000\r\nRRULE:FREQ=WEEKLY;BYDAY=SU\r\nDTSTAMP:20150706T204901Z\r\nUID:f57jj5agt1bldih3sp7h09egm0@google.com\r\nCREATED:20100503T114745Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20150706T204901Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:REVIEW\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63571898941\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT1M\r\nX-EVOLUTION-ALARM-UID:2336c35d66856cc9863d8ad02da5fabac3f2eb9e\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:EMAIL\r\nDESCRIPTION:This is an event reminder\r\nSUMMARY:Alarm notification\r\nATTENDEE:mailto:natri23@gmail.com\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:5d7c7dcf619e33c49964ffe7c8551dad4149ec1c\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e7f79386ec7d5bd381035e66d815a9c9d527e26a\n83271790c59ff6b57711cba4d43e77865ad33601\n1583657940\n1583658000\n1583661600\nBEGIN:VEVENT\r\nDTSTART;TZID=Europe/Stockholm:20100509T100000\r\nDTEND;TZID=Europe/Stockholm:20100509T110000\r\nRRULE:FREQ=WEEKLY;BYDAY=SU\r\nDTSTAMP:20150706T204901Z\r\nUID:f57jj5agt1bldih3sp7h09egm0@google.com\r\nCREATED:20100503T114745Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20150706T204901Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:REVIEW\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63571898941\r\nBEGIN:VALARM\r\nACTION:EMAIL\r\nDESCRIPTION:This is an event reminder\r\nSUMMARY:Alarm notification\r\nATTENDEE:mailto:natri23@gmail.com\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:6af52ac33f816bc3d49f3dc935e1f3be085717c7\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT1M\r\nX-EVOLUTION-ALARM-UID:83271790c59ff6b57711cba4d43e77865ad33601\r\nEND:VALARM\r\nEND:VEVENT\r\n']
+reminders-past=@as []
 
 [org/gnome/file-roller/dialogs/extract]
 recreate-folders=true
@@ -515,11 +516,15 @@ show-create-link=true
 use-experimental-views=false
 
 [org/gnome/nautilus/window-state]
-geometry='969x537+196+92'
+geometry='969x537+111+81'
 maximized=false
 sidebar-width=168
 
 [org/gnome/nm-applet/eap/288d759d-2787-4daa-8029-ee398fd11b4b]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/41fd3efa-378f-4b99-a89e-19e481b299ef]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -718,7 +723,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(188, 33)
+window-position=(188, 32)
 window-size=(990, 688)
 
 [org/onboard]
