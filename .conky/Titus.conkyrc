@@ -123,7 +123,7 @@ conky.config = {
 
 	--Colours
 
-	default_color = '#597AA1',  				-- default color and border color D9DDE2
+	default_color = '#00BFFF',  				-- default color and border color D9DDE2
 	color1 = '#FF0000',
 	color2 = '#597AA1',
 	color3 = '#cccccc',
@@ -143,12 +143,12 @@ conky.config = {
 };
 
 conky.text = [[
-${color6}${voffset 4}${font Google Sans:size=36}${alignc}${time %l}:${time %M} ${time %p}${font}${color}
-${color6}${voffset 4}${font Google Sans:size=12}${alignc}${time %A}, ${time %e} ${time %B}, ${time %Y}${font}${color}
+${color5}${voffset 4}${font Google Sans:size=36}${alignc}${time %l}:${time %M} ${time %p}${font}${color}
+${color5}${voffset 4}${font Google Sans:size=12}${alignc}${time %A}, ${time %e} ${time %B}, ${time %Y}${font}${color}
 #${color5}${font Roboto:size=10}${voffset 2}S Y S T E M   ${hr 2}${font}${color}
 #${color2}${voffset 8}Hostname:${color} ${alignr}${nodename}
 
-${color2}Distro:${color}${alignr}$sysname $kernel ${alignr}${execi 6000 lsb_release -a | grep 'Distributor'|awk {'print $3'}} ${execi 6000 lsb_release -a | grep 'Release'|awk {'print $2""$3""$4""$5'}}
+     ${color2}Distro:${color}${alignr}$sysname $kernel ${alignr}${execi 6000 lsb_release -a | grep 'Distributor'|awk {'print $3'}} ${execi 6000 lsb_release -a | grep 'Release'|awk {'print $2""$3""$4""$5'}}
 #${color2}Kernel:${color}${alignr}${exec uname} ${exec uname -r}
 #${color2}Nvidia:${color} ${alignr}${execp  nvidia-smi --query-supported-clocks=gpu_name --format=csv,noheader}
 #${color2}Nvidia Sensors:${color} ${alignr}${offset -10}${execp  nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader}  ${alignr}${execp  nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader}°C
@@ -156,9 +156,9 @@ ${color2}Distro:${color}${alignr}$sysname $kernel ${alignr}${execi 6000 lsb_rele
 #Nvidia Driver: ${alignr}${execi 60000 nvidia-smi | grep "Driver Version"| awk {'print $3'}}
 #${color2}Uptime:${color} ${alignr}${uptime}
 ${color5}${font Roboto:size=10}P R O C E S S O R S  ${hr 2}${font}${color}
-${color2}CPU Freq:${color} $alignr${freq}MHz
-${color2}CPU Temp:${color} $alignr${execi 10 sensors | grep 'Core 0' | awk {'print $3'}}
-${color2}History:${color} ${alignr}${offset -15}${cpu cpu0}%${alignr}${cpugraph 8,100}
+     ${color2}CPU Freq:${color} $alignr${freq}MHz
+     ${color2}CPU Temp:${color} $alignr${execi 10 sensors | grep 'Core 0' | awk {'print $3'}}
+     ${color2}History:${color} ${alignr}${offset -15}${cpu cpu0}%${alignr}${cpugraph 8,100}
 ${color2}${offset 30}CPU Core 1:${color} ${alignr}${offset -10}${cpu cpu1}%${alignr}${cpubar cpu1}
 ${color2}${offset 30}CPU Core 2:${color} ${alignr}${offset -10}${cpu cpu2}%${alignr}${cpubar cpu2}
 ${color2}${offset 30}CPU Core 3:${color} ${alignr}${offset -10}${cpu cpu3}%${alignr}${cpubar cpu3}
