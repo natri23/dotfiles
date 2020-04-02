@@ -111,7 +111,7 @@ addbutton-visibility='hover'
 addbutton-visibility='hover'
 
 [budgie-panel/panels/{f53d05f8-4881-11ea-a709-0c8bfd2df7f8}]
-applets=['14f422a0-4882-11ea-a709-0c8bfd2df7f8', 'f8bc2470-4881-11ea-a709-0c8bfd2df7f8', '844ca8d6-5122-11ea-bd0e-0c8bfd2df7f8', '80f49f52-4882-11ea-a709-0c8bfd2df7f8', 'eb28bf3c-6724-11ea-8669-0c8bfd2df7f8', 'eefd5c7a-5483-11ea-9f11-0c8bfd2df7f8', '1a32f12e-4882-11ea-a709-0c8bfd2df7f8', '3d9a121e-4882-11ea-a709-0c8bfd2df7f8', 'dcbcb82a-6901-11ea-bfab-0c8bfd2df7f8', '2c23bbe8-4882-11ea-a709-0c8bfd2df7f8', 'a8082cfe-5c4f-11ea-97c1-0c8bfd2df7f8', '9802847a-5458-11ea-b2fb-0c8bfd2df7f8']
+applets=['14f422a0-4882-11ea-a709-0c8bfd2df7f8', 'f8bc2470-4881-11ea-a709-0c8bfd2df7f8', '844ca8d6-5122-11ea-bd0e-0c8bfd2df7f8', '80f49f52-4882-11ea-a709-0c8bfd2df7f8', '3d9a121e-4882-11ea-a709-0c8bfd2df7f8', 'eefd5c7a-5483-11ea-9f11-0c8bfd2df7f8', '1a32f12e-4882-11ea-a709-0c8bfd2df7f8', 'eb28bf3c-6724-11ea-8669-0c8bfd2df7f8', 'dcbcb82a-6901-11ea-bfab-0c8bfd2df7f8', '2c23bbe8-4882-11ea-a709-0c8bfd2df7f8', 'a8082cfe-5c4f-11ea-97c1-0c8bfd2df7f8', '9802847a-5458-11ea-b2fb-0c8bfd2df7f8']
 autohide='none'
 dock-mode=false
 enable-shadow=false
@@ -135,4 +135,4 @@ center-windows=false
 focus-mode=false
 
 [software-center]
-last-checked=int64 1585291924
+last-checked=int64 1585812181
