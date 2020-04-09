@@ -174,7 +174,7 @@ ${voffset 4}     1  -  ${top name 1}${alignr}${goto 170} ${goto 222}${top cpu 1}
      6  -  ${top name 6}${alignr} ${goto 222}${top cpu 6} ${goto 274}${top mem_res 6}
      7  -  ${top name 7}${alignr} ${goto 222}${top cpu 7} ${goto 274}${top mem_res 7}
 ${color5}${font Roboto:size=10}M E M O R Y   ${hr 2}${font}${color}
-${color2}${offset 30}RAM: ${color}${alignr}${offset -10}${mem} / ${memmax}${alignr}${membar}
+${color2}${offset 30}RAM: ${memmax} ${color}${alignr}${offset -10}${mem} - ${memeasyfree}${alignr}${membar}
 ${color2}${offset 30}Swap:${color} ${alignr}${offset -10}${swap} / ${swapmax}${alignr}${swapbar}
 #${color2}Top Processes${goto 222}cpu%${goto 274}mem%${color}
 ${voffset 4}     1  -  ${top_mem name 1}${alignr}${goto 170} ${goto 222}${top_mem cpu 1} ${goto 274}${top_mem mem_res 1}
