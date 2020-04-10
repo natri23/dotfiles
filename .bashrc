@@ -17,6 +17,7 @@ PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 source $HOME/.config/broot/launcher/bash/br
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias ll='ls -ahl'
+alias open='xdg-open'
 bind -x '"\C-b":"br -h"'
 
 ##using curl
