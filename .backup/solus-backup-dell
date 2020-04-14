@@ -150,8 +150,8 @@ addbutton-visibility='hover'
 addbutton-visibility='never'
 
 [com/solus-project/budgie-panel/panels/{f53d05f8-4881-11ea-a709-0c8bfd2df7f8}]
-applets=['14f422a0-4882-11ea-a709-0c8bfd2df7f8', 'f8bc2470-4881-11ea-a709-0c8bfd2df7f8', '844ca8d6-5122-11ea-bd0e-0c8bfd2df7f8', '80f49f52-4882-11ea-a709-0c8bfd2df7f8', '3d9a121e-4882-11ea-a709-0c8bfd2df7f8', 'dcbcb82a-6901-11ea-bfab-0c8bfd2df7f8', '1a32f12e-4882-11ea-a709-0c8bfd2df7f8', 'eb28bf3c-6724-11ea-8669-0c8bfd2df7f8', '2c23bbe8-4882-11ea-a709-0c8bfd2df7f8', '9802847a-5458-11ea-b2fb-0c8bfd2df7f8']
-autohide='automatic'
+applets=['14f422a0-4882-11ea-a709-0c8bfd2df7f8', 'f8bc2470-4881-11ea-a709-0c8bfd2df7f8', '844ca8d6-5122-11ea-bd0e-0c8bfd2df7f8', '80f49f52-4882-11ea-a709-0c8bfd2df7f8', 'eb28bf3c-6724-11ea-8669-0c8bfd2df7f8', 'dcbcb82a-6901-11ea-bfab-0c8bfd2df7f8', '1a32f12e-4882-11ea-a709-0c8bfd2df7f8', '3d9a121e-4882-11ea-a709-0c8bfd2df7f8', '2c23bbe8-4882-11ea-a709-0c8bfd2df7f8', '9802847a-5458-11ea-b2fb-0c8bfd2df7f8']
+autohide='none'
 dock-mode=false
 enable-shadow=false
 location='top'
@@ -176,7 +176,7 @@ disable-night-light-on-fullscreen=true
 focus-mode=false
 
 [com/solus-project/software-center]
-last-checked=int64 1586782877
+last-checked=int64 1586861577
 
 [desktop/ibus/engine/unikey]
 auto-restore-non-vn=true
@@ -189,7 +189,7 @@ process-word-at-begin=false
 spell-check=true
 
 [desktop/ibus/general]
-engines-order=['xkb:us::eng', 'Bamboo']
+engines-order=['Bamboo', 'xkb:us::eng']
 preload-engines=['xkb:us::eng', 'Bamboo']
 use-global-engine=true
 use-system-keyboard-layout=false
@@ -217,7 +217,7 @@ width=1366
 alignment='center'
 auto-pinning=true
 current-workspace-only=false
-dock-items=['', 'google-chrome.dockitem', 'org.gnome.Nautilus.dockitem', 'alacritty.dockitem', 'solus-sc.dockitem', 'sublime_text.dockitem', 'atom.dockitem', 'gimp.dockitem', 'org.kde.krusader.dockitem', 'org.gnome.Calculator.dockitem', 'org.gnome.Calendar.dockitem', 'psensor.dockitem', 'gnome-system-monitor.dockitem', 'simplescreenrecorder.dockitem', 'org.qbittorrent.qBittorrent.dockitem', 'budgie-desktop-settings.dockitem', 'virt-manager.dockitem', 'uget-gtk.dockitem', 'org.xfce.Catfish.dockitem', 'gzdoom.dockitem', 'chrome-hipbfijinpcgfogaopmgehiegacbhmob-Default.dockitem']
+dock-items=['', 'google-chrome.dockitem', 'org.gnome.Nautilus.dockitem', 'alacritty.dockitem', 'solus-sc.dockitem', 'sublime_text.dockitem', 'atom.dockitem', 'gimp.dockitem', 'org.kde.krusader.dockitem', 'org.gnome.Calculator.dockitem', 'org.gnome.Calendar.dockitem', 'psensor.dockitem', 'gnome-system-monitor.dockitem', 'simplescreenrecorder.dockitem', 'org.qbittorrent.qBittorrent.dockitem', 'budgie-desktop-settings.dockitem', 'virt-manager.dockitem', 'uget-gtk.dockitem', 'gzdoom.dockitem', 'chrome-hipbfijinpcgfogaopmgehiegacbhmob-Default.dockitem']
 hide-delay=0
 hide-mode='dodge-active'
 icon-size=36
@@ -267,7 +267,7 @@ window-position=(234, 49)
 window-size=(800, 600)
 
 [org/gnome/control-center]
-last-panel='datetime'
+last-panel='background'
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'Sundry', 'YaST']
@@ -295,7 +295,7 @@ exec='alacritty'
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/solus/.local/share/backgrounds/2020-04-01-16-03-19-Abstract-Shapes-2.jpg'
+picture-uri='file:///home/solus/.local/share/backgrounds/2020-04-14-18-05-33-Morskie%20Oko.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 show-desktop-icons=false
@@ -307,7 +307,7 @@ show-weekdate=false
 automatic-timezone=false
 
 [org/gnome/desktop/input-sources]
-current=uint32 0
+current=uint32 1
 per-window=false
 sources=[('xkb', 'us'), ('ibus', 'Bamboo')]
 xkb-options=['lv3:ralt_switch']
@@ -344,7 +344,7 @@ remove-old-trash-files=true
 color-shading-type='solid'
 lock-delay=uint32 0
 picture-options='zoom'
-picture-uri='file:///home/solus/.local/share/backgrounds/2020-04-01-16-03-19-Abstract-Shapes-2.jpg'
+picture-uri='file:///home/solus/.local/share/backgrounds/2020-04-14-18-05-33-Morskie%20Oko.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -352,7 +352,7 @@ secondary-color='#000000000000'
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
 
 [org/gnome/desktop/session]
-idle-delay=uint32 300
+idle-delay=uint32 600
 
 [org/gnome/desktop/sound]
 allow-volume-above-100-percent=true
@@ -518,7 +518,7 @@ show-move-to-trash-shortcut-changed-dialog=false
 use-experimental-views=false
 
 [org/gnome/nautilus/window-state]
-geometry='895x534+50+50'
+geometry='895x534+137+109'
 maximized=false
 sidebar-width=198
 
@@ -621,7 +621,7 @@ numlock-state='off'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
-night-light-last-coordinates=(12.23200143988481, 109.1833)
+night-light-last-coordinates=(12.26799856011519, 109.1833)
 
 [org/gnome/settings-daemon/plugins/media-keys]
 control-center=['<Super>x']
@@ -767,7 +767,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(30, 24)
+window-position=(187, 24)
 window-size=(990, 688)
 
 [org/onboard]
