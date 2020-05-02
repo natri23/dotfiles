@@ -13,6 +13,7 @@ neofetch
 # Add Rust to $PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+PATH="/home/solus/.local/bin:$PATH"
 
 source $HOME/.config/broot/launcher/bash/br
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
