@@ -190,7 +190,7 @@ ${offset 30}${color2}Win10 :${color} ${alignr}${offset -10}${fs_used /mnt/Win10x
 #${offset 30}${color2}I/O Read:${color} ${alignr}${offset -10}${diskio_read /dev/sda2}${alignr}${diskiograph_read sda2 8,100}
 #${offset 30}${color2}I/O Write:${color} ${alignr}${offset -10}${diskio_write /dev/sda2}${alignr}${diskiograph_write sda2 8,100}
 ${color5}${color5}${font Roboto:size=10}N E T W O R K   ${hr 2}${font}${color}
-${color2}${offset 30}IP: ${color} ${alignr}${offset -10$}${wireless_essid wlp9s0} - ${addrs wlp9s0}
+${color2}${offset 30}IP: ${color} ${alignr}${offset -0$}${wireless_essid wlp9s0} ${wireless_bitrate wlp9s0} - ${addrs wlp9s0}
 ${color2}${offset 30}Up:${color} ${alignr}${offset -10$}${upspeed wlp9s0}${alignr}${upspeedgraph wlp9s0 8,100}
 ${color2}${offset 30}Down:${color} ${alignr}${offset -10$}${downspeed wlp9s0}${alignr}${downspeedgraph wlp9s0 8,100}
 #${color5}${font Roboto:size=10}N V I D I A   ${hr 2}${font}
