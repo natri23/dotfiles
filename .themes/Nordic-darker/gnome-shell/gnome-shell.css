@@ -496,13 +496,19 @@ StScrollBar {
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2); }
   .popup-menu .popup-menu-content {
-    padding: 1em 0em; }
+    padding: 16px 0; }
   .popup-menu .popup-menu-item {
-    spacing: 12px; }
+    spacing: 6px;
+    padding: 6px; }
     .popup-menu .popup-menu-item:ltr {
-      padding: .4em 1.75em .4em 0em; }
+      padding-right: 1.75em;
+      padding-left: 0; }
     .popup-menu .popup-menu-item:rtl {
-      padding: .4em 0em .4em 1.75em; }
+      padding-right: 0;
+      padding-left: 1.75em; }
+    .popup-menu .popup-menu-item:first-child:insensitive {
+      margin-bottom: 10px;
+      margin-left: 0; }
     .popup-menu .popup-menu-item:checked {
       background-color: rgba(76, 86, 106, 0.9);
       color: #d8dee9;
@@ -541,13 +547,17 @@ StScrollBar {
   -arrow-rise: 11px;
   -arrow-box-shadow: 0 1px 3px black; }
 
-.popup-separator-menu-item {
+.popup-separator-menu-item, .popup-separator-menu-item-separator {
   height: 1px;
   margin: 6px 64px;
   background-color: transparent;
   border-color: transparent;
   border-bottom-width: 1px;
   border-bottom-style: solid; }
+
+.popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
+  margin: 0 64px 0 32px;
+  background: transparent; }
 
 .background-menu {
   -boxpointer-gap: 4px;
@@ -674,7 +684,8 @@ StScrollBar {
 .switcher-list, .workspace-switcher-container {
   color: #d8dee9;
   background-color: rgba(46, 52, 64, 0.88);
-  border: none;
+  border: 1px solid #1f232b;
+  box-shadow: 0px 0px 5px #1f232b;
   border-radius: 2px;
   padding: 12px; }
 
@@ -766,6 +777,10 @@ StScrollBar {
       .lock-screen #panel .panel-button:hover,
       .lock-screen #panel .panel-button:active {
         color: #f9fafb; }
+    #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
+      box-shadow: none; }
+      #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
+        box-shadow: none; }
   #panel .panel-status-indicators-box,
   #panel .panel-status-menu-box {
     spacing: 2px; }
@@ -789,6 +804,10 @@ StScrollBar {
 
 .calendar {
   margin-bottom: 1em; }
+
+.calendar, .world-clocks-button, .weather-button {
+  background: transparent;
+  border: none; }
 
 .calendar,
 .datemenu-today-button,
@@ -946,7 +965,7 @@ StScrollBar {
 /* Message list */
 .message-list {
   width: 31.5em; }
-  .message-list .message-title, .message-list .message-content {
+  .message-list .message-title, .message-list .message-content, .message-list .message-body {
     color: #c8d0e0; }
 
 .message-list-clear-button.button {
@@ -978,7 +997,8 @@ StScrollBar {
 .message {
   border: 1px solid #1f232b;
   border-radius: 3px;
-  background: rgba(45, 50, 62, 0.93); }
+  background: rgba(45, 50, 62, 0.93);
+  box-shadow: none; }
   .message:hover, .message:focus {
     background-color: rgba(50, 57, 70, 0.93);
     box-shadow: 3px 0px 0px 0px #4c566a inset; }
@@ -1127,7 +1147,8 @@ StScrollBar {
   icon-size: 32px; }
 
 .nm-dialog-scroll-view {
-  border: 2px solid #1f232b; }
+  border: 2px solid #1f232b;
+  background: transparent; }
 
 .nm-dialog-header {
   font-weight: bold; }
@@ -1214,6 +1235,10 @@ StScrollBar {
   spacing: 16px; }
 
 .search-section-content {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
   spacing: 32px; }
 
 .list-search-results {
@@ -1480,8 +1505,9 @@ StScrollBar {
     padding-top: 2px;
     spacing: 1px; }
   .notification-banner .notification-button {
-    padding: 0px;
-    background-color: rgba(46, 52, 64, 0.83); }
+    padding: 5px;
+    background-color: rgba(46, 52, 64, 0.83);
+    box-shadow: none; }
     .notification-banner .notification-button:first-child {
       border-radius: 0 0 0 3px; }
     .notification-banner .notification-button:last-child {
