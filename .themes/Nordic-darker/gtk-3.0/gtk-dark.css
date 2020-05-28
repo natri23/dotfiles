@@ -58,6 +58,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color content_view_bg #2e3440;
 @define-color budgie_tasklist_indicator_color #4c566a;
 @define-color budgie_tasklist_indicator_color_active #4c566a;
+@define-color placeholder_text_color #b6bcc8;
 /*****************
 * Drawing mixins *
 *****************/
@@ -304,7 +305,7 @@ button {
   button:checked {
     color: #d8dee9;
     outline-color: rgba(216, 222, 233, 0.3);
-    background: #414a5b;
+    background-color: #414a5b;
     text-shadow: none;
     transition-duration: 50ms; }
   notebook > header > tabs > arrow:backdrop, notebook > header > tabs > arrow:backdrop,
@@ -616,7 +617,7 @@ button.suggested-action {
   button.suggested-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background: #88c0d0;
+    background-color: #88c0d0;
     text-shadow: none; }
   .selection-mode button.titlebutton:backdrop,
   button.suggested-action:backdrop,
@@ -766,7 +767,7 @@ button.destructive-action {
   button.destructive-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background: #a9444e;
+    background-color: #a9444e;
     text-shadow: none; }
   
   button.destructive-action:backdrop,
@@ -2363,7 +2364,7 @@ headerbar {
     headerbar button:checked {
       color: #fff;
       outline-color: rgba(255, 255, 255, 0.3);
-      background: #4c566a;
+      background-color: #4c566a;
       text-shadow: none; }
     .titlebar button:backdrop, .titlebar button:disabled, .titlebar button:backdrop:disabled,
     headerbar button:backdrop,
@@ -2406,7 +2407,7 @@ headerbar {
       headerbar button.suggested-action:active {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background: #88c0d0;
+        background-color: #88c0d0;
         text-shadow: none; }
       .titlebar button.suggested-action:disabled,
       headerbar button.suggested-action:disabled {
@@ -2452,7 +2453,7 @@ headerbar {
       headerbar button.destructive-action:active {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background: #a9444e;
+        background-color: #a9444e;
         text-shadow: none; }
       .titlebar button.destructive-action:disabled,
       headerbar button.destructive-action:disabled {
@@ -2552,7 +2553,7 @@ headerbar {
   headerbar .path-bar-box button:checked {
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
-    background: #4c566a;
+    background-color: #4c566a;
     text-shadow: none; }
     .titlebar .linked > button:active:backdrop,
     .titlebar headerbar .linked > button:active:backdrop, .titlebar .path-bar-box button:active:backdrop, headerbar .path-bar-box .titlebar button:active:backdrop, .titlebar .linked > button:checked:backdrop,
@@ -2602,7 +2603,7 @@ headerbar {
     border-radius: 0px 4px 4px 0px;
     color: #d8dee9;
     outline-color: rgba(216, 222, 233, 0.3);
-    background: #4c566a;
+    background-color: #4c566a;
     text-shadow: none; }
     .titlebar .path-bar-box widget > .text-button:last-child:backdrop, .titlebar .path-bar-box widget > .text-button:last-child:backdrop label,
     headerbar .path-bar-box widget > .text-button:last-child:backdrop,
@@ -6153,7 +6154,7 @@ ConversationListView {
   #content_frame button:active, #content_frame button:checked {
     color: #d8dee9;
     outline-color: rgba(216, 222, 233, 0.3);
-    background: #4c566a;
+    background-color: #4c566a;
     text-shadow: none; }
   #content_frame button:disabled {
     color: #b6bcc8;
