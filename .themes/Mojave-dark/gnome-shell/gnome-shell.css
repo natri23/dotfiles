@@ -864,7 +864,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu {
   min-width: 12em;
   color: #dedede;
-  padding: 9px 0 3px 0;
+  padding: 3px 0 3px 0;
   border-image: url("assets/menu.svg") 24 32 28 28;
 }
 
@@ -960,7 +960,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu .popup-inactive-menu-item:insensitive {
-  color: transparent;
+  color: rgba(222, 222, 222, 0.35);
 }
 
 .popup-menu.panel-menu {
@@ -975,12 +975,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu-boxpointer {
-  -arrow-border-radius: 3px;
+  -arrow-border-radius: 2px;
   -arrow-background-color: transparent;
   -arrow-border-width: 0;
   -arrow-border-color: transparent;
   -arrow-base: 64px;
-  -arrow-rise: 6px;
+  -arrow-rise: 0;
   -arrow-box-shadow: none;
   background: transparent;
 }
@@ -1004,7 +1004,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-separator-menu-item {
-  height: 0;
   margin: 0;
   padding: 0 0;
   background: none;
@@ -1013,13 +1012,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .popup-separator-menu-item .popup-separator-menu-item-separator {
   height: 1px;
-  margin: 0 40px 12px 40px;
+  margin: 0 40px;
   background-color: rgba(255, 255, 255, 0.12);
   padding: 0 0;
 }
 
 .popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
-  margin: 0 58px 12px 24px;
+  padding: 0 0;
+  margin: 0 58px 0 24px;
 }
 
 .system-switch-user-submenu-icon.user-icon {
@@ -1476,8 +1476,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: none;
 }
 
+.clock-display-box {
+  spacing: 4px;
+}
+
+.clock-display-box .clock {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
 #calendarArea {
-  padding: 8px 16px;
+  padding: 8px 12px;
 }
 
 .calendar {
@@ -1485,6 +1494,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: none;
   box-shadow: none;
   background: none;
+  padding: 0;
 }
 
 .calendar,
@@ -1492,10 +1502,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .datemenu-displays-box,
 .message-list-sections {
   margin: 0 8px;
-}
-
-.datemenu-calendar-column {
-  spacing: 8px;
 }
 
 .datemenu-displays-section {
@@ -1507,7 +1513,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .datemenu-calendar-column {
-  border: 0 solid rgba(255, 255, 255, 0.12);
+  spacing: 8px;
+  border: none;
+  padding: 0 0;
 }
 
 .datemenu-calendar-column:ltr {
@@ -1520,6 +1528,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .datemenu-today-button {
   min-height: 48px;
+}
+
+.datemenu-today-button .date-label {
+  font-size: 18pt;
+  font-weight: 400;
 }
 
 .message-list-section-list:ltr {
@@ -1540,6 +1553,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: none;
   box-shadow: none;
   background: none;
+  text-shadow: none;
   color: #afafaf;
 }
 
@@ -1562,11 +1576,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.datemenu-today-button .date-label {
-  font-size: 18pt;
-  font-weight: 400;
-}
-
 .world-clocks-header,
 .weather-header,
 .events-section-title {
@@ -1574,8 +1583,29 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-weight: bold;
 }
 
-.world-clocks-grid {
+/* World Clock */
+.world-clocks-grid,
+.weather-grid {
   spacing-rows: 0.4em;
+  spacing-columns: 0.8em;
+}
+
+.world-clocks-city {
+  color: #999999;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.world-clocks-time {
+  color: #999999;
+  font-feature-settings: "tnum";
+  font-size: 1.2em;
+}
+
+.world-clocks-timezone {
+  color: #999999;
+  font-feature-settings: "tnum";
+  font-size: 0.9em;
 }
 
 /* Weather */
@@ -1683,10 +1713,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   text-align: center;
   width: 28px;
   height: 28px;
-  padding: 0;
+  padding: 2px;
   margin: 2px;
-  border-radius: 100px;
+  border-radius: 1000px;
   color: #afafaf;
+  font-feature-settings: "tnum";
 }
 
 .calendar-day-base:hover, .calendar-day-base:focus {
@@ -1764,6 +1795,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-image: none;
 }
 
+.calendar-day-with-events.calendar-work-day {
+  color: #999999;
+  font-weight: bold;
+}
+
 .calendar-other-month-day {
   color: rgba(222, 222, 222, 0.35);
   opacity: 0.5;
@@ -1786,6 +1822,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .message-list {
   width: 31.5em;
   padding: 0 12px;
+  text-shadow: none;
 }
 
 .message-list .message-list-placeholder {
@@ -2134,13 +2171,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: rgba(255, 255, 255, 0.12);
   border-radius: 8px;
   border-color: transparent;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 .app-folder-dialog .folder-name-container .folder-name-entry:focus, .search-entry:focus {
   border-color: transparent;
   background-color: rgba(255, 255, 255, 0.18);
-  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.55);
   padding: 0 8px;
   border: none;
   color: rgba(255, 255, 255, 0.85);
@@ -2385,8 +2421,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   width: 5px;
   height: 5px;
   border-radius: 3px;
-  background-color: #315bef;
+  background-color: rgba(255, 255, 255, 0.85);
   margin-bottom: 0;
+}
+
+StWidget.focused .app-well-app-running-dot {
+  background-color: #315bef;
 }
 
 .search-provider-icon,
@@ -2488,9 +2528,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   spacing: 4px;
 }
 
-/* App Folders */
 .app-folder-dialog {
-  border-radius: 16px;
+  border-radius: 32px;
   border: none;
   spacing: 12px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -3498,224 +3537,179 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* Dash to Dock */
+#dashtodockContainer {
+  background: transparent;
+}
+
+#dashtodockContainer .app-well-app-running-dot {
+  background-color: #dadada;
+}
+
+#dashtodockContainer #dash, #dashtodockContainer:overview #dash, #dashtodockContainer.extended #dash, #dashtodockContainer.extended:overview #dash {
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+
+#dashtodockContainer.top #dash, #dashtodockContainer.top:overview #dash {
+  border-radius: 0 0 12px 12px;
+}
+
+#dashtodockContainer.top.extended #dash, #dashtodockContainer.top.extended:overview #dash {
+  border-radius: 0 0 12px 12px;
+}
+
+#dashtodockContainer.bottom #dash, #dashtodockContainer.bottom:overview #dash {
+  border-radius: 12px 12px 0 0;
+}
+
+#dashtodockContainer.bottom.extended #dash, #dashtodockContainer.bottom.extended:overview #dash {
+  border-radius: 12px 12px 0 0;
+}
+
+#dashtodockContainer.left #dash, #dashtodockContainer.left:overview #dash {
+  border-radius: 0 12px 12px 0;
+}
+
+#dashtodockContainer.left.extended #dash, #dashtodockContainer.left.extended:overview #dash {
+  border-radius: 0 12px 12px 0;
+}
+
+#dashtodockContainer.right #dash, #dashtodockContainer.right:overview #dash {
+  border-radius: 12px 0 0 12px;
+}
+
+#dashtodockContainer.right.extended #dash, #dashtodockContainer.right.extended:overview #dash {
+  border-radius: 12px 0 0 12px;
+}
+
+#dashtodockContainer.top #dash, #dashtodockContainer.bottom #dash {
+  padding: 0 4px;
+}
+
+#dashtodockContainer.left #dash, #dashtodockContainer.right #dash {
+  padding: 4px 0;
+}
+
 #dashtodockContainer #dash {
-  background-color: #333333;
+  background-color: rgba(42, 42, 42, 0.65);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+#dashtodockContainer #dash .app-well-app-running-dot {
+  background-color: rgba(218, 218, 218, 0.85);
+}
+
+#dashtodockContainer #dash StWidget.focused .app-well-app-running-dot {
+  background-color: #315bef;
+}
+
+#dashtodockContainer.opaque #dash {
+  background-color: rgba(42, 42, 42, 0.65);
+}
+
+#dashtodockContainer.transparent #dash {
+  background-color: rgba(42, 42, 42, 0.65);
 }
 
 #dashtodockContainer:overview #dash {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-#dashtodockContainer.extended:overview #dash {
-  background-color: transparent;
+#dashtodockContainer:overview #dash .app-well-app-running-dot {
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
-#dashtodockContainer.left #dash,
-#dashtodockContainer.right #dash {
-  padding: 3px 0;
+#dashtodockContainer:overview #dash StWidget.focused .app-well-app-running-dot {
+  background-color: #315bef;
 }
 
-#dashtodockContainer.top #dash,
-#dashtodockContainer.bottom #dash {
-  padding: 0 3px;
+#dashtodockContainer.opaque:overview #dash, #dashtodockContainer.transparent:overview #dash {
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
-#dashtodockContainer.extended #dash {
-  padding: 0;
-  border-radius: 0;
+#dashtodockContainer.extended:overview #dash, #dashtodockContainer.opaque.extended:overview #dash, #dashtodockContainer.transparent.extended:overview #dash {
+  background-color: rgba(42, 42, 42, 0.65);
 }
 
-#dashtodockContainer.left .dash-item-container > StWidget,
-#dashtodockContainer.right .dash-item-container > StWidget,
-#dashtodockContainer.extended.left .dash-item-container > StWidget,
-#dashtodockContainer.extended.right .dash-item-container > StWidget {
-  padding: 3px 6px;
-}
-
-#dashtodockContainer.extended.left .dash-item-container:first-child > StWidget,
-#dashtodockContainer.extended.right .dash-item-container:first-child > StWidget {
-  padding: 6px 6px 3px 6px;
-}
-
-#dashtodockContainer.extended.left .dash-item-container:last-child > StWidget,
-#dashtodockContainer.extended.right .dash-item-container:last-child > StWidget {
-  padding: 3px 6px 6px 6px;
-}
-
-#dashtodockContainer.top .dash-item-container > StWidget,
-#dashtodockContainer.bottom .dash-item-container > StWidget,
-#dashtodockContainer.extended.top .dash-item-container > StWidget,
-#dashtodockContainer.extended.bottom .dash-item-container > StWidget {
-  padding: 6px 3px;
-}
-
-#dashtodockContainer.extended.top .dash-item-container:first-child > StWidget,
-#dashtodockContainer.extended.bottom .dash-item-container:first-child > StWidget {
-  padding: 6px 3px 6px 6px;
-}
-
-#dashtodockContainer.extended.top .dash-item-container:last-child > StWidget,
-#dashtodockContainer.extended.bottom .dash-item-container:last-child > StWidget {
-  padding: 6px 6px 6px 3px;
-}
-
-#dashtodockContainer .app-well-app-running-dot {
-  background-color: transparent;
-}
-
-#dashtodockContainer .dash-item-container > StWidget {
-  background-size: cover;
-}
-
-#dashtodockContainer.left .dash-item-container > StWidget.running1 {
-  background-image: url("assets/dash/left-running1.svg");
-}
-
-#dashtodockContainer.left .dash-item-container > StWidget.running1.focused {
-  background-image: url("assets/dash/left-running1-focused.svg");
-}
-
-#dashtodockContainer.left .dash-item-container > StWidget.running2 {
-  background-image: url("assets/dash/left-running2.svg");
-}
-
-#dashtodockContainer.left .dash-item-container > StWidget.running2.focused {
-  background-image: url("assets/dash/left-running2-focused.svg");
-}
-
-#dashtodockContainer.left .dash-item-container > StWidget.running3 {
-  background-image: url("assets/dash/left-running3.svg");
-}
-
-#dashtodockContainer.left .dash-item-container > StWidget.running3.focused {
-  background-image: url("assets/dash/left-running3-focused.svg");
-}
-
-#dashtodockContainer.left .dash-item-container > StWidget.running4 {
-  background-image: url("assets/dash/left-running4.svg");
-}
-
-#dashtodockContainer.left .dash-item-container > StWidget.running4.focused {
-  background-image: url("assets/dash/left-running4-focused.svg");
-}
-
-#dashtodockContainer.right .dash-item-container > StWidget.running1 {
-  background-image: url("assets/dash/right-running1.svg");
-}
-
-#dashtodockContainer.right .dash-item-container > StWidget.running1.focused {
-  background-image: url("assets/dash/right-running1-focused.svg");
-}
-
-#dashtodockContainer.right .dash-item-container > StWidget.running2 {
-  background-image: url("assets/dash/right-running2.svg");
-}
-
-#dashtodockContainer.right .dash-item-container > StWidget.running2.focused {
-  background-image: url("assets/dash/right-running2-focused.svg");
-}
-
-#dashtodockContainer.right .dash-item-container > StWidget.running3 {
-  background-image: url("assets/dash/right-running3.svg");
-}
-
-#dashtodockContainer.right .dash-item-container > StWidget.running3.focused {
-  background-image: url("assets/dash/right-running3-focused.svg");
-}
-
-#dashtodockContainer.right .dash-item-container > StWidget.running4 {
-  background-image: url("assets/dash/right-running4.svg");
-}
-
-#dashtodockContainer.right .dash-item-container > StWidget.running4.focused {
-  background-image: url("assets/dash/right-running4-focused.svg");
-}
-
-#dashtodockContainer.top .dash-item-container > StWidget.running1 {
-  background-image: url("assets/dash/top-running1.svg");
-}
-
-#dashtodockContainer.top .dash-item-container > StWidget.running1.focused {
-  background-image: url("assets/dash/top-running1-focused.svg");
-}
-
-#dashtodockContainer.top .dash-item-container > StWidget.running2 {
-  background-image: url("assets/dash/top-running2.svg");
-}
-
-#dashtodockContainer.top .dash-item-container > StWidget.running2.focused {
-  background-image: url("assets/dash/top-running2-focused.svg");
-}
-
-#dashtodockContainer.top .dash-item-container > StWidget.running3 {
-  background-image: url("assets/dash/top-running3.svg");
-}
-
-#dashtodockContainer.top .dash-item-container > StWidget.running3.focused {
-  background-image: url("assets/dash/top-running3-focused.svg");
-}
-
-#dashtodockContainer.top .dash-item-container > StWidget.running4 {
-  background-image: url("assets/dash/top-running4.svg");
-}
-
-#dashtodockContainer.top .dash-item-container > StWidget.running4.focused {
-  background-image: url("assets/dash/top-running4-focused.svg");
-}
-
-#dashtodockContainer.bottom .dash-item-container > StWidget.running1 {
-  background-image: url("assets/dash/bottom-running1.svg");
-}
-
-#dashtodockContainer.bottom .dash-item-container > StWidget.running1.focused {
-  background-image: url("assets/dash/bottom-running1-focused.svg");
-}
-
-#dashtodockContainer.bottom .dash-item-container > StWidget.running2 {
-  background-image: url("assets/dash/bottom-running2.svg");
-}
-
-#dashtodockContainer.bottom .dash-item-container > StWidget.running2.focused {
-  background-image: url("assets/dash/bottom-running2-focused.svg");
-}
-
-#dashtodockContainer.bottom .dash-item-container > StWidget.running3 {
-  background-image: url("assets/dash/bottom-running3.svg");
-}
-
-#dashtodockContainer.bottom .dash-item-container > StWidget.running3.focused {
-  background-image: url("assets/dash/bottom-running3-focused.svg");
-}
-
-#dashtodockContainer.bottom .dash-item-container > StWidget.running4 {
-  background-image: url("assets/dash/bottom-running4.svg");
-}
-
-#dashtodockContainer.bottom .dash-item-container > StWidget.running4.focused {
-  background-image: url("assets/dash/bottom-running4-focused.svg");
+#dashtodockContainer .app-well-app .overview-icon,
+#dashtodockContainer .show-apps .overview-icon {
+  padding: 8px;
+  background-size: contain;
 }
 
 #dash:desktop {
-  background-color: #333333;
+  background-color: rgba(42, 42, 42, 0.65);
 }
 
-.openweather-button-box {
-  padding: 6px;
-  spacing: 12px;
-}
-
-.openweather-button-action {
+.openweather-button, .openweather-button-action, .openweather-menu-button-container, .openweather-button-box {
   border: 1px solid transparent;
-  background: none;
-  margin: 0 6px;
-  padding: 6px;
 }
 
-.openweather-button-action:hover,
-.openweather-button-action:focus {
-  border: none;
-  padding: 6px;
+.openweather-provider {
+  padding: 0 16px;
+  font-weight: 500;
+  color: #afafaf;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+  text-shadow: none;
+  icon-shadow: none;
+}
+
+.openweather-provider:hover {
+  color: #dedede;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: transparent;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+  text-shadow: none;
+  icon-shadow: none;
+}
+
+.openweather-provider:focus {
+  color: #dedede;
+  text-shadow: none;
+  icon-shadow: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.openweather-provider:active {
+  color: #dedede;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: transparent;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+  text-shadow: none;
+  icon-shadow: none;
+}
+
+.openweather-current-icon, .openweather-current-summary, .openweather-current-summarybox {
+  background: none;
+  color: #dedede;
+}
+
+.openweather-current-databox-values {
+  background: none;
+  color: #999999;
+}
+
+.openweather-current-databox-captions {
+  background: none;
+  color: #999999;
+}
+
+.openweather-forecast-icon, .openweather-forecast-summary {
+  background: none;
+  color: #afafaf;
+}
+
+.openweather-forecast-day, .openweather-forecast-temperature {
+  background: none;
+  color: #999999;
+}
+
+.openweather-sunrise-icon, .openweather-sunset-icon, .openweather-build-icon {
+  color: #afafaf;
 }
 
 .popup-menu .search-entry {
