@@ -881,6 +881,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu .popup-menu-item {
   spacing: 12px;
   padding: 6px;
+  color: #dedede;
+  text-shadow: none;
   transition-duration: 50ms;
 }
 
@@ -892,6 +894,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu .popup-menu-item:rtl {
   padding-right: 0;
   padding-left: 1.5em;
+}
+
+.popup-menu .popup-menu-item .popup-menu-icon,
+.popup-menu .popup-menu-item .app-menu-icon > StIcon,
+.popup-menu .popup-menu-item .popup-menu-arrow {
+  icon-shadow: 0 0 rgba(0, 0, 0, 0);
 }
 
 .popup-menu .popup-menu-item:checked {
