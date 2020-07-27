@@ -3142,9 +3142,14 @@ StWidget.focused .app-well-app-running-dot {
   icon-size: 16px;
 }
 
-.login-dialog .caps-lock-warning-label,
 .login-dialog .login-dialog-message-warning {
   color: rgba(255, 255, 255, 0.85);
+}
+
+.caps-lock-warning-label {
+  text-align: center;
+  padding-bottom: 8px;
+  color: #F27835;
 }
 
 .login-dialog-logo-bin {
@@ -3258,6 +3263,21 @@ StWidget.focused .app-well-app-running-dot {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
+.user-icon {
+  background-size: contain;
+  color: rgba(255, 255, 255, 0.85);
+  border-radius: 9999px;
+}
+
+.user-icon:hover {
+  color: white;
+}
+
+.user-icon StIcon {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 9999px;
+}
+
 .user-widget-label {
   color: rgba(255, 255, 255, 0.85);
 }
@@ -3276,10 +3296,32 @@ StWidget.focused .app-well-app-running-dot {
   padding-right: 14px;
 }
 
+.user-widget.horizontal .user-icon {
+  icon-size: 64px;
+}
+
+.user-widget.horizontal .user-icon StIcon {
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+}
+
 .user-widget.vertical .user-widget-label {
   text-align: center;
   font-weight: normal;
   padding-top: 16px;
+}
+
+.user-widget.vertical .user-icon {
+  icon-size: 96px;
+}
+
+.user-widget.vertical .user-icon StIcon {
+  padding: 20px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  width: 88px;
+  height: 88px;
 }
 
 .login-dialog-prompt-entry {
