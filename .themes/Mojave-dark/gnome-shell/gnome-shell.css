@@ -23,7 +23,6 @@
 }
 
 stage {
-  font-family: "M+ 1c", Roboto, Cantarell, Sans-Serif;
   font-size: 9.75pt;
   font-weight: 400;
   color: #dedede;
@@ -2839,8 +2838,19 @@ StWidget.focused .app-well-app-running-dot {
 
 #keyboard {
   background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: none;
 }
 
+#keyboard .page-indicator {
+  padding: 6px;
+}
+
+#keyboard .page-indicator .page-indicator-icon {
+  width: 8px;
+  height: 8px;
+}
+
+.key-container,
 .keyboard-layout {
   padding: 4px;
   spacing: 4px;
@@ -2895,7 +2905,6 @@ StWidget.focused .app-well-app-running-dot {
 
 .keyboard-key.enter-key {
   background-color: #315bef;
-  background-image: url("assets/key-enter.svg");
 }
 
 .keyboard-key.enter-key:focus, .keyboard-key.enter-key:hover {
@@ -2908,24 +2917,8 @@ StWidget.focused .app-well-app-running-dot {
   background-color: #113edc;
 }
 
-.keyboard-key.shift-key-lowercase {
-  background-image: url("assets/key-shift.svg");
-}
-
-.keyboard-key.shift-key-uppercase {
-  background-image: url("assets/key-shift-uppercase.svg");
-}
-
-.keyboard-key.shift-key-uppercase:latched {
-  background-image: url("assets/key-shift-latched-uppercase.svg");
-}
-
-.keyboard-key.hide-key {
-  background-image: url("assets/key-hide.svg");
-}
-
-.keyboard-key.layout-key {
-  background-image: url("assets/key-layout.svg");
+.keyboard-key StIcon {
+  icon-size: 1.125em;
 }
 
 .keyboard-subkeys {
