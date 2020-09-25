@@ -1,0 +1,7 @@
+#/bin/sh
+
+IFS='
+'
+for i in ${NAUTILUS_SCRIPT_SELECTED_FILE_PATHS}; do
+  sha256sum "$i"
+done | zenity --text-info --title="sha256sums" --width=800 --height=40
