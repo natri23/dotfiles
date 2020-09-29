@@ -29,3 +29,7 @@ transfer() { if [ $# -eq 0 ]; then echo -e "No arguments specified. Usage:\necho
 function dcd {
 	    br -h --only-folders --cmd "$1 :cd"
     }
+FZF_COMPLETION_FILE=/usr/share/bash-completion/completions/fzf
+[[ -f $FZF_COMPLETION_FILE ]] && source $FZF_COMPLETION_FILE
+FZF_KEYBINDING_FILE=/usr/share/fzf/key-bindings.bash
+[[ -f $FZF_KEYBINDING_FILE ]] && source $FZF_KEYBINDING_FILE
