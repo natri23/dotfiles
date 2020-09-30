@@ -25,11 +25,11 @@ bind -x '"\C-b":"br -h"'
 transfer() { if [ $# -eq 0 ]; then echo -e "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi
 	tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g'); curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile" >> $tmpfile; else curl --progress-bar --upload-file "-" "https://transfer.sh/$1" >> $tmpfile ; fi; cat $tmpfile; rm -f $tmpfile; }
 
-# deep fuzzy cd
-function dcd {
-	    br -h --only-folders --cmd "$1 :cd"
-    }
+# fzf shortcut
 FZF_COMPLETION_FILE=/usr/share/bash-completion/completions/fzf
 [[ -f $FZF_COMPLETION_FILE ]] && source $FZF_COMPLETION_FILE
 FZF_KEYBINDING_FILE=/usr/share/fzf/key-bindings.bash
 [[ -f $FZF_KEYBINDING_FILE ]] && source $FZF_KEYBINDING_FILE
+export FZF_DEFAULT_COMMAND="fd . $HOME"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd -t d . $HOME"
