@@ -183,7 +183,7 @@ ${voffset 4}     1  -  ${top_mem name 1}${alignr}${goto 170} ${goto 222}${top_me
      4  -  ${top_mem name 4}${alignr}${goto 170} ${goto 222}${top_mem cpu 4} ${goto 274}${top_mem mem_res 4}
      5  -  ${top_mem name 5}${alignr}${goto 170} ${goto 222}${top_mem cpu 5} ${goto 274}${top_mem mem_res 5}
 ${color5}${font Roboto:size=10}D R I V E S   ${hr 2}${font}${color}
-${offset 30}${color2}Root - SSD:${color} ${alignr}${offset -10}${fs_free /} / ${fs_size /}${alignr}${fs_bar}
+${offset 30}${color2}Root:${color} ${alignr}${offset -10}${fs_free /} / ${fs_size /}${alignr}${fs_bar}
 ${offset 30}${color2}I/O Read:${color} ${alignr}${offset -10}${diskio_read /dev/sda3}${alignr}${diskiograph_read sda3 8,100}
 ${offset 30}${color2}I/O Write:${color} ${alignr}${offset -10}${diskio_write /dev/sda3}${alignr}${diskiograph_write sda3 8,100}
 ${offset 30}${color2}Win10 :${color} ${alignr}${offset -10}${fs_free /mnt/Win10x64} / ${fs_size /mnt/Win10x64}${alignr}${fs_bar}
