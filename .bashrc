@@ -9,6 +9,7 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
 fi
 
 neofetch
+systemd-analyze
 
 # Add Rust to $PATH
 export PATH="$HOME/.cargo/bin:$PATH"
