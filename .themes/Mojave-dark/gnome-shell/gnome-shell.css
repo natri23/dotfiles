@@ -1553,6 +1553,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .datemenu-today-button,
 .world-clocks-button,
 .weather-button,
+.events-button,
 .events-section-title {
   min-height: 20px;
   padding: 4px 8px;
@@ -1569,6 +1570,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .world-clocks-button:focus,
 .weather-button:hover,
 .weather-button:focus,
+.events-button:hover,
+.events-button:focus,
 .events-section-title:hover,
 .events-section-title:focus {
   color: #dedede;
@@ -1578,6 +1581,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .datemenu-today-button:active,
 .world-clocks-button:active,
 .weather-button:active,
+.events-button:active,
 .events-section-title:active {
   color: #dedede;
   background-color: rgba(255, 255, 255, 0.1);
@@ -1588,6 +1592,28 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .events-section-title {
   color: #afafaf;
   font-weight: bold;
+}
+
+/* Events */
+.events-button .events-box {
+  spacing: 6px;
+}
+
+.events-button .events-list {
+  spacing: 12px;
+  text-shadow: none;
+}
+
+.events-button .events-title {
+  color: #999999;
+  font-weight: bold;
+  margin-bottom: 4px;
+  text-shadow: none;
+}
+
+.events-button .event-time {
+  color: #999999;
+  font-feature-settings: "tnum";
 }
 
 /* World Clock */
@@ -1668,6 +1694,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #dedede;
   font-weight: bold;
   text-align: center;
+  text-shadow: none;
 }
 
 .calendar-month-label:focus {
@@ -1732,14 +1759,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .calendar-day-base:active {
-  color: inherit;
+  color: #afafaf;
   background-color: rgba(255, 255, 255, 0.1);
   border-color: transparent;
 }
 
 .calendar-day-base:selected {
-  color: rgba(255, 255, 255, 0.85);
-  background-color: #315bef;
+  color: #dedede;
+  background-color: rgba(255, 255, 255, 0.1);
   border-color: transparent;
 }
 
@@ -1796,10 +1823,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .calendar-day-with-events {
-  color: #3484e2;
-  font-weight: normal;
-  text-decoration: underline;
-  background-image: none;
+  color: #999999;
+  background-image: url("assets/calendar-today.svg");
 }
 
 .calendar-day-with-events.calendar-work-day {
@@ -2535,11 +2560,15 @@ StWidget.focused .app-well-app-running-dot {
   spacing: 4px;
 }
 
+.app-folder {
+  background: none;
+}
+
 .app-folder-dialog {
   border-radius: 32px;
   border: none;
   spacing: 12px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .app-folder-dialog .folder-name-container {
