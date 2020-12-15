@@ -6076,6 +6076,19 @@ SheetStyleDialog.unity-force-quit {
   animation: playbackmenuitem_spinner 1s infinite linear;
   color: #4c566a; }
 
+MsdOsdWindow.background.osd {
+  border-radius: 2px;
+  border: 1px solid #1f232b; }
+  MsdOsdWindow.background.osd .progressbar {
+    background-color: #4c566a;
+    border: none;
+    border-color: #4c566a;
+    border-radius: 5px; }
+  MsdOsdWindow.background.osd .trough {
+    background-color: rgba(25, 28, 34, 0.93);
+    border: none;
+    border-radius: 5px; }
+
 /***********************
  * App-Specific Styles *
  ***********************/
