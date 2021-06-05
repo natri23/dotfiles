@@ -2941,7 +2941,8 @@ menu,
   padding: 2px 0px;
   background: #2a2f3a;
   border: 1px solid #1f232b;
-  border-radius: 5px; }
+  border-radius: 5px;
+  font: initial; }
   .csd menu, .csd
   .menu, .csd
   .context-menu {
@@ -5702,6 +5703,9 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   #gnc-id-main-window .arrow.button.toggle:hover {
     border-color: #4c566a; }
 
+/*******************
+ * Calendar events *
+********************/
 .color-light label, .color-light.timed label {
   color: #2e3440;
   opacity: 1; }
@@ -6312,6 +6316,10 @@ ConversationListView {
       border: 1px solid #1f232b;
       border-radius: 4px; }
 
+.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview,
+.nemo-window .nemo-inactive-pane iconview {
+  background-color: #282d37; }
+
 /* thunar */
 .thunar toolbar {
   background-color: #2b303c; }
@@ -6367,3 +6375,10 @@ window.thunar paned > scrolledwindow treeview.view:hover, window.thunar paned > 
   color: #d8dee9;
   border-radius: 0;
   box-shadow: none; }
+
+.caja-notebook .entry {
+  background: #2e3440;
+  color: #d8dee9; }
+  .caja-notebook .entry:selected {
+    background: #4c566a;
+    color: #d8dee9; }

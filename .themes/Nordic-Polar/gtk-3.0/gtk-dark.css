@@ -2964,7 +2964,8 @@ menu,
   padding: 2px 0px;
   background: #2e3440;
   border: 1px solid #262a34;
-  border-radius: 5px; }
+  border-radius: 5px;
+  font: initial; }
   .csd menu, .csd
   .menu, .csd
   .context-menu {
@@ -6347,6 +6348,10 @@ ConversationListView {
       border-color: #1f232b;
       text-shadow: none;
       box-shadow: none; }
+
+.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview,
+.nemo-window .nemo-inactive-pane iconview {
+  background-color: #353b49; }
 
 /* thunar */
 .thunar toolbar {
