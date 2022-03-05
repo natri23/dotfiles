@@ -1,5 +1,5 @@
 --[[
-#=====================================================================================
+#====================================================================================
 #                               arcolinux
 # Date    : package-date
 # Author  : Erik Dubois at http://www.erikdubois.be
@@ -186,7 +186,7 @@ ${color5}${font Roboto:size=10}D R I V E S   ${hr 2}${font}${color}
 ${offset 30}${color2}Root:${color} ${alignr}${offset -10}${fs_free /} / ${fs_size /}${alignr}${fs_bar}
 ${offset 30}${color2}I/O Read:${color} ${alignr}${offset -10}${diskio_read /dev/sda3}${alignr}${diskiograph_read sda3 8,100}
 ${offset 30}${color2}I/O Write:${color} ${alignr}${offset -10}${diskio_write /dev/sda3}${alignr}${diskiograph_write sda3 8,100}
-${offset 30}${color2}Win10 :${color} ${alignr}${offset -10}${fs_free /mnt/Win10x64} / ${fs_size /mnt/Win10x64}${alignr}${fs_bar}
+${offset 30}${color2}Win10 :${color} ${alignr}${offset -10}${fs_free /mnt/Win10x64/} / ${fs_size /mnt/Win10x64/}${alignr}${fs_bar /mnt/Win10x64}
 #${offset 30}${color2}I/O Read:${color} ${alignr}${offset -10}${diskio_read /dev/sda2}${alignr}${diskiograph_read sda2 8,100}
 #${offset 30}${color2}I/O Write:${color} ${alignr}${offset -10}${diskio_write /dev/sda2}${alignr}${diskiograph_write sda2 8,100}
 ${color5}${color5}${font Roboto:size=10}N E T W O R K   ${hr 2}${font}${color}
