@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Conky
-Description=
-Exec=conky -c "/home/solus/.conky/Titus.conkyrc" &

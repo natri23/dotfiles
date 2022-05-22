@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Conky
+Description=
+Exec=/usr/local/bin/conky -c "/home/solus/.conky/Titus.conkyrc" &
+GenericName[en_US.UTF-8]=conky -c "/home/solus/.conky/Titus.conkyrc" &
+Comment[en_US.UTF-8]=conky -c "/home/solus/.conky/Titus.conkyrc" &
